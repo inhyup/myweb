@@ -1,0 +1,66 @@
+<HTML> 
+    <HEAD> 
+    <title>Age-Counter</title> 
+    <style TYPE="text/css"> 
+    <!-- 
+    BODY {font-size:9pt} 
+    Table {font-size:12pt} 
+    A:link {text-decoration:none;} 
+    A:visited {text-decoration:none;color:blue;} 
+    A:hover {text-decoration:none;color:red;} 
+    STRONG {font-size:25pt} 
+    FONT {font-size:9pt} 
+    input {font-size:9pt} 
+    --> 
+    </style> 
+    </head> 
+    <BODY> 
+    <SCRIPT LANGUAGE="JAVASCRIPT"> 
+    <!-- hide this script tag's contents from old browsers 
+    function lifetimer(){         
+            today = new Date() 
+            BirthDay = new Date(document.live.age.value) 
+            timeold = (today.getTime() - BirthDay.getTime()); 
+            sectimeold = timeold / 1000; 
+            secondsold = Math.floor(sectimeold); 
+            msPerDay = 24 * 60 * 60 * 1000 ; 
+            timeold = (today.getTime() - BirthDay.getTime()); 
+            e_daysold = timeold / msPerDay; 
+            daysold = Math.floor(e_daysold); 
+            e_hrsold = (e_daysold - daysold)*24; 
+            hrsold = Math.floor(e_hrsold); 
+            minsold = Math.floor((e_hrsold - hrsold)*60); 
+            document.live.time1.value = daysold         
+            document.live.time2.value = hrsold         
+            document.live.time3.value = minsold         
+            window.status = "당신이 태어나서 " + secondsold + "초 지나고 있네요!"; 
+            timerID = setTimeout("lifetimer()",1000) 
+    } 
+    
+    // -- done hiding from old browsers --> 
+    </script> 
+    
+    <font color=red>당신이 태어나서 지금껏 살아온 시간들을 알아보는 스크립트입니다!</font><br><br><form name="live"> 
+    
+    당신의 생일을 아래에 다음처럼 입력하세요!!<br> 
+    ex) 1969년 6월 15일생 ▶ <font color=red>june 15,1969</font> 또는 <font color=red>jun 15,1969</font><br> 
+    <INPUT TYPE="text" NAME="age" VALUE="" SIZE=15><br> 
+    <INPUT TYPE="button" NAME="start" VALUE="계산하기" ONCLICK="lifetimer(this.form)"> 
+    <INPUT TYPE="reset" NAME="resetb" VALUE="지우기"><br> 
+    당신이 태어나서<INPUT TYPE="text" NAME="time1" VALUE="" size=5>일<INPUT TYPE="text" NAME="time2" VALUE="" size=2>시간<INPUT TYPE="text" NAME="time3" VALUE="" size=2>분이 지났습니다.</form> 
+    <font color=green>아래 상태 표시줄을 보면 당신이 지금까지 살아온 초까지도 알 수가 있습니다.</font><br><br> 
+    <font color=blue>영어가 딸리는 분들을 위한 자그마한 배려!!! ^^</font><br> 
+    1월:<font color=red>Jan</font>uary<BR> 
+    2월:<font color=red>Feb</font>ruary<BR> 
+    3월:<font color=red>Mar</font>ch<BR> 
+    4월:<font color=red>Apr</font>il<BR> 
+    5월:<font color=red>May</font><BR> 
+    6월:<font color=red>Jun</font>e<BR> 
+    7월:<font color=red>Jul</font>y<BR> 
+    8월:<font color=red>Aug</font>ust<BR> 
+    9월:<font color=red>Sep</font>tember<BR> 
+    10월:<font color=red>Oct</font>ober<BR> 
+    11월:<font color=red>Nov</font>ember<BR> 
+    12월:<font color=red>Dec</font>ember<BR> 
+    </BODY> 
+    </HTML>
